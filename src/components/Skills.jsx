@@ -121,31 +121,38 @@ const Skills = ({ setPosition }) => {
                     className="vertical-timeline-element--education"
                     iconStyle={{ background: "#0d1729", color: "#fff" }}
                     icon={<FaBook />}
-                    date="2023 April - June"
+                    date=" April 2023 - June 2023"
                   >
-                    <h3>Course & Work experience</h3>
-                    <p className="">Course & work experience in buffalo</p>
+                    {/* <h3>Course And Work Experience</h3> */}
+                    <p>
+                      Private course with a bartender with 10 years of
+                      experience (without certificate) and one month of
+                      experience in Buffalo(Bar)
+                    </p>
                   </VerticalTimelineElement>
 
                   <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     iconStyle={{ background: "#0d1729", color: "#fff" }}
                     icon={<MdWorkOutline />}
-                    date="2023 June - Present"
+                    date="June 2023 - Present"
                   >
-                    <h3>
+                    <p className="">
+                      {" "}
                       Studying Higher Technician Degree in Hotel Management
-                    </h3>
-                    <p className=""></p>
+                      (online and Asynchronous)
+                    </p>
                   </VerticalTimelineElement>
                   <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     iconStyle={{ background: "#0d1729", color: "#fff" }}
                     icon={<FaGlassMartiniAlt />}
-                    date="2023 Jan - Present"
+                    date="Jan 2023 - Present"
                   >
-                    <h3>Trabajo</h3>
-                    <p className="">Trabajo</p>
+                    <p className="">
+                      Covering events as a Barback/Bartender for Guillermo Caram
+                      Productions.
+                    </p>
                   </VerticalTimelineElement>
                 </VerticalTimeline>
               </div>

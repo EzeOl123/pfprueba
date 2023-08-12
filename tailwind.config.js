@@ -9,6 +9,9 @@ module.exports = {
       spotify: "#1DB954",
     },
     extend: {
+      zIndex: {
+        9999: "9999",
+      },
       maxWidth: {
         "1/2": "50%",
       },

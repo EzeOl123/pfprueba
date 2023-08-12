@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-
+import styles from "../styles/styles.module.css";
 import Home2 from "./AND/Home2";
 import Contact from "./Contact";
 import Projects from "./Projects";
@@ -79,196 +79,202 @@ const Main = () => {
     <div>
       {/* <motion.div> */}
       {screenSize.width > 500 ? (
-        <div className="sticky bg-red-300 top-0 flex flex-row w-full items-center content-center justify-center font-bold gap-2 text-lg	containerofbuttons?	 py-2">
-          <Link
-            to={"home"}
-            smooth={true}
-            offset={-250}
-            duration={500}
-            onClick={() => {
-              setPosition("0");
-            }}
-          >
-            <button>
-              <h5
-                className={
-                  position == "0"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                Home
-              </h5>
-            </button>
-          </Link>
-          <Link
-            to={"experience"}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={() => {
-              setPosition("1");
-            }}
-            disabled={true}
-          >
-            <button>
-              <h5
-                className={
-                  position == "1"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                Experience
-              </h5>
-            </button>
-          </Link>
-          <Link
-            to="aboutmereal"
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={() => {
-              setPosition("2");
-            }}
-          >
-            <button>
-              <h5
-                className={
-                  position == "2"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                About Me
-              </h5>
-            </button>
-          </Link>
-          <Link
-            to={"contact"}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={() => {
-              setPosition("3");
-            }}
-          >
-            <button>
-              <h5
-                className={
-                  position == "3"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                Contact
-              </h5>
-            </button>
-          </Link>
+        <div className={styles.backgroundprueba}>
+          <div className="bg-slate-950 top-0	z-9999 fixed sticky  top-0 flex flex-row w-full items-center content-center justify-center font-bold gap-2 text-lg	 py-2">
+            <Link
+              to={"home"}
+              smooth={true}
+              offset={-250}
+              duration={500}
+              onClick={() => {
+                setPosition("0");
+              }}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "0"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  Home
+                </h5>
+              </button>
+            </Link>
+            <Link
+              to={"experience"}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setPosition("1");
+              }}
+              disabled={true}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "1"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  Experience
+                </h5>
+              </button>
+            </Link>
+            <Link
+              to="aboutmereal"
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setPosition("2");
+              }}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "2"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  About Me
+                </h5>
+              </button>
+            </Link>
+            <Link
+              to={"contact"}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setPosition("3");
+              }}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "3"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  Contact
+                </h5>
+              </button>
+            </Link>
+          </div>
         </div>
       ) : (
-        <div className="sticky bg-red-300 top-0 flex flex-row w-full items-center content-center justify-center font-bold gap-2 text-xs py-2">
-          <Link
-            to={"home"}
-            smooth={true}
-            offset={-250}
-            duration={500}
-            onClick={() => {
-              setPosition("0");
-            }}
-          >
-            <button>
-              <h5
-                className={
-                  position == "0"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                Home
-              </h5>
-            </button>
-          </Link>
-          <Link
-            to={"experience"}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={() => {
-              setPosition("1");
-            }}
-            disabled={true}
-          >
-            <button>
-              <h5
-                className={
-                  position == "1"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                Experience
-              </h5>
-            </button>
-          </Link>
-          <Link
-            to="aboutmereal"
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={() => {
-              setPosition("2");
-            }}
-          >
-            <button>
-              <h5
-                className={
-                  position == "2"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                About Me
-              </h5>
-            </button>
-          </Link>
-          <Link
-            to={"contact"}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={() => {
-              setPosition("3");
-            }}
-          >
-            <button>
-              <h5
-                className={
-                  position == "3"
-                    ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
-                    : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
-                }
-              >
-                Contact
-              </h5>
-            </button>
-          </Link>
+        <div className={styles.backgroundprueba}>
+          <div className="top-0	z-9999 fixed sticky  top-0 flex flex-row w-full items-center content-center justify-center font-bold gap-2 text-xs py-2">
+            <Link
+              to={"home"}
+              smooth={true}
+              offset={-250}
+              duration={500}
+              onClick={() => {
+                setPosition("0");
+              }}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "0"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  Home
+                </h5>
+              </button>
+            </Link>
+            <Link
+              to={"experience"}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setPosition("1");
+              }}
+              disabled={true}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "1"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  Experience
+                </h5>
+              </button>
+            </Link>
+            <Link
+              to="aboutmereal"
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setPosition("2");
+              }}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "2"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  About Me
+                </h5>
+              </button>
+            </Link>
+            <Link
+              to={"contact"}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setPosition("3");
+              }}
+            >
+              <button>
+                <h5
+                  className={
+                    position == "3"
+                      ? "border-b border-gray-600 duration-300 hover:duration-400 text-spotify translate-y-1"
+                      : "border-b border-gray-500 hover:border-gray-600 duration-300 hover:duration-400 hover:text-spotify hover:translate-y-1"
+                  }
+                >
+                  Contact
+                </h5>
+              </button>
+            </Link>
+          </div>
         </div>
       )}
       {/* </motion.div> */}
-      <div id="home">
-        <Home2 setPosition={setPosition} />
-      </div>
-      <div id="experience" className="h-screen">
-        <div>
-          <Skills className="" setPosition={setPosition} />
+      <div className="flex flex-col gap-20">
+        <div id="home">
+          <Home2 setPosition={setPosition} />
         </div>
-      </div>
-      <div id="aboutmereal">
-        <Aboutmereal setPosition={setPosition} />
-      </div>
-      <div id="contact">
-        <Contact setPosition={setPosition} />
+        <div id="experience" className="h-screen">
+          <div>
+            <Skills className="" setPosition={setPosition} />
+          </div>
+        </div>
+        <div id="aboutmereal">
+          <Aboutmereal setPosition={setPosition} />
+        </div>
+        <div id="contact">
+          <Contact setPosition={setPosition} />
+        </div>
       </div>
     </div>
   );

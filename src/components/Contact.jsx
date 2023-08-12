@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
-import { FaFileDownload } from "react-icons/fa";
+import { FaFileDownload, FaPhoneSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { SiGmail } from "react-icons/si";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
+
 import { MotionConfig } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
@@ -118,38 +119,6 @@ const Contact = ({ setPosition }) => {
             </motion.div>
           </motion.div>
         </a>
-
-        <a
-          href="https://www.linkedin.com/in/ezequiel-olivera-valladares-3092b4227/"
-          className="hover:opacity-75 duration-300 hover:duration-400 hover:translate-x-2"
-        >
-          <motion.div
-            initial={{ opacity: 0, translateX: 50 }}
-            animate={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 1.5 }}
-            className="flex flex-row gap-2 items-center"
-          >
-            <p>Linkedin</p>
-            <motion.div
-              className="box"
-              animate={{
-                scale: [1, 1, 1, 1, 1],
-                rotate: [0, 0, 0, 180, 360],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 1,
-              }}
-            >
-              <AiFillLinkedin className="h-5 w-5 duration-300 hover:duration-400 hover:rotate-180" />
-            </motion.div>
-          </motion.div>
-        </a>
-
         <a
           href="mailto:ezeolivera@gmail.com"
           className="hover:opacity-75 duration-300 hover:duration-400 hover:translate-x-2"
@@ -177,6 +146,33 @@ const Contact = ({ setPosition }) => {
               }}
             >
               <SiGmail className="h-4 w-4 duration-300 hover:duration-400 hover:rotate-180" />
+            </motion.div>
+          </motion.div>
+        </a>
+        <a className="hover:opacity-75 duration-300 hover:duration-400 hover:translate-x-2">
+          <motion.div
+            initial={{ opacity: 0, translateX: 50 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1.5 }}
+            className="flex flex-row gap-2 items-center"
+          >
+            <p>+5492615029394</p>
+            <motion.div
+              className="box"
+              animate={{
+                scale: [1, 1, 1, 1, 1],
+                rotate: [0, 0, 0, 180, 360],
+                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+            >
+              <FaPhoneSquare className="h-5 w-5 duration-300 hover:duration-400 hover:rotate-180" />
             </motion.div>
           </motion.div>
         </a>
