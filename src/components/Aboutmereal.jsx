@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
-import aboutmerealimg from "../imgs/messi.png";
+import aboutmerealimg from "../imgs/aboutmereal4.png";
 import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";

@@ -140,7 +140,7 @@ const Skills = ({ setPosition }) => {
                     <p className="">
                       {" "}
                       Studying Higher Technician Degree in Hotel Management
-                      (online and Asynchronous)
+                      (Online and Asynchronous)
                     </p>
                   </VerticalTimelineElement>
                   <VerticalTimelineElement
