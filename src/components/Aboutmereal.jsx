@@ -70,7 +70,7 @@ const Aboutmereal = ({ setPosition }) => {
         >
           <div className="w-4/5 md:w-1/5 text-start bg-black">
             <h3 className="">
-              I'm a 20-year-old Hotel Management student on a journey of
+              I'm a 21 year old Hotel Management student on a journey of
               learning and growth. Alongside my studies, I've spent 8 months
               immersing myself in the world of hospitality as a barback and
               bartender. I am in search of a position that can enhance my

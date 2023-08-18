@@ -9,6 +9,8 @@ import { useAnimation } from "framer-motion";
 import { FaGlassMartiniAlt } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
 import { MdWorkOutline } from "react-icons/md";
+import { GiGraduateCap } from "react-icons/gi";
+import styles from "../styles/styles.module.css";
 import "react-vertical-timeline-component/style.min.css";
 import {
   BsFillArrowDownCircleFill,
@@ -120,24 +122,20 @@ const Skills = ({ setPosition }) => {
                   <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     iconStyle={{ background: "#0d1729", color: "#fff" }}
-                    icon={<FaBook />}
-                    date=" April 2023 - June 2023"
+                    icon={<GiGraduateCap />}
+                    date="August - 2023"
                   >
-                    {/* <h3>Course And Work Experience</h3> */}
-                    <p>
-                      Private course with a bartender with 10 years of
-                      experience (without certificate) and one month of
-                      experience in Buffalo(Bar)
+                    <p className={styles.textoblack}>
+                      Professional Bartender Diploma - Edutin Academy
                     </p>
                   </VerticalTimelineElement>
-
                   <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     iconStyle={{ background: "#0d1729", color: "#fff" }}
-                    icon={<MdWorkOutline />}
+                    icon={<FaBook />}
                     date="June 2023 - Present"
                   >
-                    <p className="">
+                    <p className={styles.textoblack}>
                       {" "}
                       Studying Higher Technician Degree in Hotel Management
                       (Online and Asynchronous)
@@ -149,7 +147,7 @@ const Skills = ({ setPosition }) => {
                     icon={<FaGlassMartiniAlt />}
                     date="Jan 2023 - Present"
                   >
-                    <p className="">
+                    <p className={styles.textoblack}>
                       Covering events as a Barback/Bartender for Guillermo Caram
                       Productions.
                     </p>
